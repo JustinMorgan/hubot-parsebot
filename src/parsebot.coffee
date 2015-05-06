@@ -6,10 +6,12 @@
 #   swiss-army-eval
 #
 # Commands:
-#   !javascript [code]   - evaluates [code] as JavaScript
-#   !js [code]           - evaluates [code] as JavaScript
-#   !coffeescript [code] - evaluates [code] as CoffeeScript
-#   !coffee [code]       - evaluates [code] as CoffeeScript
+#   hubot javascript me [code]   - evaluates [code] as JavaScript
+#   hubot js me [code]           - evaluates [code] as JavaScript
+#   hubot js [code]              - evaluates [code] as JavaScript
+#   hubot coffeescript me [code] - evaluates [code] as CoffeeScript
+#   hubot coffee me [code]       - evaluates [code] as CoffeeScript
+#   hubot coffee [code]          - evaluates [code] as CoffeeScript
 #
 # Author:
 #   JustinMorgan@GitHub
@@ -17,7 +19,7 @@
 compile = require "swiss-army-eval" 
 
 module.exports = (robot) -> 
-  robot.hear /^!(js|javascript|coffee(?:script)?) (.*)/i, (msg) ->
+  robot.respond /(js(?: me)?|javascript|coffee(?: me|script)?) (.*)/i, (msg) ->
     [lang, code] = msg.match[1..]
     try 
       msg.send (do compile lang, code).toString()
