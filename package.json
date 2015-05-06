@@ -1,0 +1,28 @@
+{
+  "name": "hubot-parsebot",
+  "version": "0.0.1",
+  "description": "A Hubot script that evaluates inline JS or CoffeeScript.",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JustinMorgan/hubot-parsebot"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "hubot-parsebot",
+    "eval"
+  ],
+  "author": "Justin Morgan <justinmorgan.github@gmail.com> (https://github.com/JustinMorgan)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustinMorgan/hubot-parsebot/issues"
+  },
+  "homepage": "https://github.com/JustinMorgan/hubot-parsebot",
+  "dependencies": {
+    "swiss-army-eval": "^0.2.5"
+  }
+}
