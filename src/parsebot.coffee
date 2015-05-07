@@ -19,7 +19,7 @@
 compile = require "swiss-army-eval" 
 
 module.exports = (robot) -> 
-  robot.respond /(js(?: me)?|javascript|coffee(?: me|script)?) (.*)/i, (msg) ->
+  robot.respond /(js|javascript|coffee(?:script)?)(?: me)? (.*)/i, (msg) ->
     [lang, code] = msg.match[1..]
     try 
       msg.send (do compile lang, code).toString()
