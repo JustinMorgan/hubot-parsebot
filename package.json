@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/JustinMorgan/hubot-parsebot",
   "dependencies": {
-    "swiss-army-eval": "^0.2.5"
+    "swiss-army-eval": "^0.3.0"
   }
 }
