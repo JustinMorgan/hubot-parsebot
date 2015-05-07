@@ -12,10 +12,10 @@ A Hubot script that evaluates JS or CoffeeScript from chat messages.
 ## Hubot chat commands
 
 ```
-hubot javascript me "foo" + " bar"             > "foo bar"
-hubot js me (function() { return 1 + 2; }()    > 3
-hubot coffeescript me 76 * 21                  > 1596
-hubot coffee me (do () -> if on then 1 else 2) > 1 
+hubot javascript me "foo" + " bar"              > "foo bar"
+hubot js me (function() { return 1 + 2; })()    > 3
+hubot coffeescript me 76 * 21                   > 1596
+hubot coffee me (do () -> if on then 1 else 2)  > 1 
 ```
 
 
