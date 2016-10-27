@@ -21,7 +21,8 @@ hubot coffee me (do () -> if on then 1 else 2)  > 1
 
 ## About
 
-- GitHub project: https://github.com/JustinMorgan/hubot-parsebot
+- GitHub: https://github.com/JustinMorgan/hubot-parsebot
+- NPM: https://www.npmjs.com/package/hubot-parsebot
 - Author: Justin Morgan (https://github.com/JustinMorgan)
 - License: ParseBot is licensed under the [MIT][mit] license.
 
